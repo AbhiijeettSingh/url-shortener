@@ -38,7 +38,7 @@ app.post("/url", async (req, res) => {
   try {
     console.log('request made')
     const longUrl = req.body.longUrl;
-    const shortUrl = "http://localhost:5000/" + uuidv4().slice(0, 8);
+    const shortUrl = "https://url-shortener-8mb3.onrender.com/" + uuidv4().slice(0, 8);
 
     console.log(longUrl, '\n', shortUrl);
     console.log('Before trying to create');

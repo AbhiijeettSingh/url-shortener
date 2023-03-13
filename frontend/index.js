@@ -16,7 +16,7 @@ form.addEventListener("submit", (e) => {
     return;
   }
   
-  fetch('http://localhost:5000/url',{
+  fetch('https://url-shortener-8mb3.onrender.com/url',{
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({longUrl}),
