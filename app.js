@@ -47,7 +47,8 @@ app.post("/url", async (req, res) => {
     res.send(JSON.stringify(e));
   }
 });
-const PORT = process.env.PORT;
+const PORT = 3000 || process.env.PORT;
+
 app.listen(PORT, () => {
   console.log("app is listening at port ", PORT);
 });
