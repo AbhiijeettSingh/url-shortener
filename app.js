@@ -8,7 +8,6 @@ app.use(express.json());
 
 (async () => {
   await sequelize.sync({ force: true });
-  console.log("All models are synchronized successfully.");
 })();
 
 app.get("/:id", async (req, res) => {

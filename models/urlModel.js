@@ -23,7 +23,4 @@ Url.init({
   modelName: 'Url' 
 });
 
-// the defined model is the class itself
-console.log(Url === sequelize.models.Url); // true
-
 module.exports = {Url, sequelize};
